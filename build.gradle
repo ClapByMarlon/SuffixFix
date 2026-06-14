@@ -1,0 +1,58 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url = 'https://jitpack.io/'
+        }
+        maven {
+            name = 'forge'
+            url = 'https://maven.minecraftforge.net/'
+        }
+        maven {
+            url = 'https://repo.spongepowered.org/repository/maven-public/'
+        }
+        maven {
+            name = 'sonatype'
+            url = 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
+    }
+    dependencies {
+        classpath 'com.github.gatooooooo:ForgeGradle:FG_2.1-SNAPSHOT'
+    }
+}
+
+plugins { id 'java' }
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+group = 'de.marlo.suffixfix'
+version = '1.0.0'
+archivesBaseName = 'suffix-fix'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+minecraft {
+    version = '1.8.9-11.15.1.2318-1.8.9'
+    runDir = 'run'
+    mappings = 'stable_22'
+    makeObfSourceJar = false
+    clientJvmArgs += [
+        '-Dfml.coreMods.load=net.labymod.core.asm.LabyModCoreMod',
+        '-DdebugMode=true',
+        '-Daddonresources=addon.json'
+    ]
+}
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+    maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+    maven { url = 'https://jitpack.io/' }
+    maven { url = 'https://maven.minecraftforge.net/' }
+}
+
+dependencies {
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+}

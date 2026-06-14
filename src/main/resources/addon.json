@@ -1,0 +1,10 @@
+{
+  "name": "suffix-fix",
+  "description": "Spieler mit Suffix aus der Verkauf-zone gekickt.",
+  "author": "ClapByMarlon",
+  "uuid": "%uuid%",
+  "mainClass": "de.marlo.suffixfix.SuffixFixAddon",
+  "version": 1,
+  "category": 2,
+  "icon": "https://raw.githubusercontent.com/ClapByMarlon/SuffixFix/main/suffixfix.png"
+}
