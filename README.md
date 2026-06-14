@@ -19,3 +19,7 @@ Ein LabyMod 3 Addon für Minecraft 1.8.9.
 
 ```text
 .minecraft/LabyMod/addons-1.8/
+Fals ihr MultiMC nutzt kann der pfad anders sein.
+Bei Problemen oder Fragen Bitte auf Discord melden
+DC: ClapByMarlon
+
