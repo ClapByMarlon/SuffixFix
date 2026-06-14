@@ -18,7 +18,8 @@ Ein LabyMod 3 Addon für Minecraft 1.8.9.
 2. Lege die Datei in deinen LabyMod Addons-Ordner:
 
 ```text
-.minecraft/LabyMod/addons-1.8/
+.minecraft/LabyMod/addons-1.8/```
+
 Fals ihr MultiMC nutzt kann der pfad anders sein.
 Bei Problemen oder Fragen Bitte auf Discord melden
 DC: ClapByMarlon
